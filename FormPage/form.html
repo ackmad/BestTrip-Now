@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bestTrip | Form For Your Destination</title>
+    <link rel="stylesheet" href="style-form.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="navbar" class="flex">
+            <img src="../assets/icon/logo-navbar-dark.svg" alt="logo-navbar" class="logo-navbar">
+            <button class="btn-back">
+                <img src="../assets/icon/icon-arrow.svg" width="30px">
+                <a href="../index.html">Back to home</a>
+            </button>
+        </div>
+
+        <div id="container-form" class="flex">
+            <div id="formSideFixed" class="from-side">
+                <h1 class="title">Form</h1>
+                <p class="descibe">Temukan destinasi liburan sempurna dengan mengisi formulir ini. Beri tahu kami
+                    preferensi Anda, dan biarkan kami membantu Anda merencanakan perjalanan yang tak terlupakan.</p>
+
+                <form id="myform">
+                    <p class="flex">
+                        <input type="text" id="username" placeholder="Hai, siapa nama Anda?" required
+                            autocomplete="off">
+                        <select class="form-control" id="mood" autocomplete="off">
+                            <option value="">Suasana liburan?? (Opsional)</option>
+                            <option value="Santai">Santai</option>
+                            <option value="Petualangan">Petualangan</option>
+                            <option value="Budaya">Budaya</option>
+                            <option value="Alam">Alam</option>
+                            <option value="Pesta">Pesta</option>
+                        </select>
+                    </p>
+
+                    <p class="flex">
+                        <input type="text" id="location" placeholder="Mau liburan ke mana nih? (Kota/Negara tujuan)"
+                            required autocomplete="off">
+                    </p>
+
+                    <p class="flex">
+                        <input type="number" class="form-control" id="budget" autocomplete="off"
+                            placeholder="Budget liburannya berapa? (Opsional)">
+                        <select class="form-control" id="cuaca" autocomplete="off">
+                            <option value="">Cuaca favorit Anda? (Opsional)</option>
+                            <option value="Cerah">Cerah</option>
+                            <option value="Dingin">Dingin</option>
+                            <option value="Hujan">Hujan</option>
+                            <option value="Bersalju">Bersalju</option>
+                        </select>
+                    </p>
+
+                    <p class="flex">
+                        <select class="form-control" id="transportasi" autocomplete="off">
+                            <option value="">Mau naik apa ke sana? (Opsional)</option>
+                            <option value="Mobil">Mobil</option>
+                            <option value="Motor">Motor</option>
+                            <option value="Kapal">Kapal</option>
+                            <option value="Pesawat">Pesawat</option>
+                        </select>
+
+                        <select class="form-control" id="jenisDestinasi" required autocomplete="off">
+                            <option value="">Mau ke mana nih?</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Taman">Taman</option>
+                            <option value="Curug">Curug</option>
+                            <option value="Pantai">Pantai</option>
+                            <option value="Pegunungan">Pegunungan</option>
+                            <option value="Resort">Resort</option>
+                            <option value="Wisata Kuliner">Wisata Kuliner</option>
+                            <option value="Wisata Sejarah">Wisata Sejarah</option>
+                            <option value="Tempat Hiburan">Tempat Hiburan</option>
+                        </select>
+                    </p>
+
+                    <p class="flex">
+                        <select class="form-control" id="akomodasi" autocomplete="off">
+                            <option value="">Menginap di mana? (Opsional)</option>
+                            <option value="Hotel Bintang 5">Hotel Bintang 5</option>
+                            <option value="Hotel Bintang 3">Hotel Bintang 3</option>
+                            <option value="Hostel">Hostel</option>
+                            <option value="Guest House">Guest House</option>
+                            <option value="Camping">Camping</option>
+                            <option value="Apartemen">Apartemen</option>
+                        </select>
+
+                        <select class="form-control" id="aktivitas" autocomplete="off">
+                            <option value="">Aktivitas yang disukai? (Opsional)</option>
+                            <option value="Hiking">Hiking</option>
+                            <option value="Snorkeling">Snorkeling</option>
+                            <option value="Diving">Diving</option>
+                            <option value="Belanja">Belanja</option>
+                            <option value="Kulineran">Kulineran</option>
+                            <option value="Mengunjungi Tempat Bersejarah">Mengunjungi Tempat Bersejarah</option>
+                            <option value="Menginap Santai">Menginap Santai</option>
+                        </select>
+                    </p>
+
+                    <p class="flex">
+                        <select class="form-control" id="jumlahOrang" required autocomplete="off">
+                            <option value="">Pergi dengan siapa?</option>
+                            <option value="Sendiri">Sendiri</option>
+                            <option value="Pasangan">Pasangan</option>
+                            <option value="Keluarga">Keluarga</option>
+                            <option value="Teman">Teman</option>
+                            <option value="Rombongan">Rombongan</option>
+                        </select>
+
+                        <select class="form-control" id="lamaLiburan" autocomplete="off">
+                            <option value="">Lama liburan? (Opsional)</option>
+                            <option value="1 Hari">1 Hari</option>
+                            <option value="Akhir Pekan">Akhir Pekan</option>
+                            <option value="3-5 Hari">3-5 Hari</option>
+                            <option value="Seminggu">Seminggu</option>
+                            <option value="Lebih dari Seminggu">Lebih dari Seminggu</option>
+                        </select>
+                    </p>
+
+                    <button type="submit" class="submit-search" id="submit">Cari Destinasi</button>
+                </form>
+            </div>
+            <div class="result-side">
+                <h1>Hasil Pencarian: </h1>
+                <div class="result">
+                    <p id="loadingText"></p>
+                    <div id="resultText"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+
+    <!-- AI Generator -->
+    <script type="module" src="index.mjs"></script>
+
+    <!-- Script untuk Markdown dan AI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.6/markdown-it.min.js"></script>
+    <script type="module" src="index.mjs"></script>
+
+</body>
+
+</html>

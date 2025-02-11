@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestTrip | Let's make your best trip ever</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        
+        <div id="navbar" class="flex">
+            <img src="assets/icon/logo-navbar.svg" alt="Logo" class="nav-logo">
+            <ul class="nav-menus flex">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#feature-section">Feature</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown" style="display: none;">
+                <div class="dropdown-content">
+                    <a href="#hero-section">Home</a>
+                    <a href="#about-section">About</a>
+                    <a href="#feature-section">Feature</a>
+                    <a href="#testimonial-section">Testimonial</a>
+                    <a href="#contact-section">Contact</a>
+                </div>
+            </div>                
+            <button class="btn-start">
+                <a href="FormPage/form.html">Selengkapnya</a>
+            </button>
+                    
+        </div>
+        <div id="hero-section">
+
+            <div class="section">
+                <h1 class="tagline">Let's make your best trip ever</h1>
+                <p class="descibe-tagline">Temukan destinasi liburan ideal Anda dengan mudah melalui platform kami. Cukup isi formulir singkat dan temukan pengalaman perjalanan yang sesuai dengan preferensi dan mood Anda.</p>
+                <button class="start"><a href="pages/form.html">Cari Destinasimu</a></button>
+                <div class="flex" style="justify-content: center; align-items: center;">
+                    <form id="myform" class="form flex">
+                        <div class="flex form-left">
+                            <div class="input-form input-user flex">
+                                <img src="assets/icon/icon-user.svg" alt="icon-user">
+                                <input type="text" id="username1" placeholder="Nama Anda" required autocomplete="on">
+                            </div>
+                            <div class="input-form input-location flex">
+                                <img src="assets/icon/icon-location.svg" alt="icon-location">
+                                <input type="text" id="location1" placeholder="Kota/Negara Tujuan" required autocomplete="on">
+                            </div>
+                            <div class="input-form input-mood flex">
+                                <img src="assets/icon/icon-mood.svg" alt="icon-mood">
+                                <select id="mood1" class="form-control" required autocomplete="on">
+                                    <option value="">Pilih Mood</option>
+                                    <option value="Santai">Santai</option>
+                                    <option value="Petualangan">Petualangan</option>
+                                    <option value="Budaya">Budaya</option>
+                                    <option value="Alam">Alam</option>
+                                    <option value="Pesta">Pesta</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="input-form input-budget flex">
+                                <img src="assets/icon/icon-budget.svg" alt="icon-budget">
+                                <input type="number" name="budget" placeholder="Masukan Budget" id="budget1" required autocomplete="on">
+                            </div>
+                            <div class="input-form input-weather flex">
+                                <img src="assets/icon/icon-weather.svg" alt="icon-weather">
+                                <select id="cuaca1" class="form-control" required autocomplete="on">
+                                    <option value="">Cuaca</option>
+                                    <option value="Cerah">Cerah</option>
+                                    <option value="Dingin">Dingin</option>
+                                    <option value="Hujan">Hujan</option>
+                                    <option value="Bersalju">Bersalju</option>
+                                </select>
+                            </div>
+                            <div class="input-form input-trasportasi flex">
+                                <img src="assets/icon/icon-trasportasi.svg" alt="icon-trasportasi">
+                                <select id="transportasi1" class="form-control" required autocomplete="on">
+                                    <option value="">Transportasi</option>
+                                    <option value="Mobil">Mobil</option>
+                                    <option value="Motor">Motor</option>
+                                    <option value="Kapal">Kapal</option>
+                                    <option value="Pesawat">Pesawat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-start" id="btn-submit">Search</button>
+                    </form>
+                                        
+                </div>
+                <div class="body-side-fixed">
+                    <button id="toggleButton" onclick="toggleForm()"><i class="fas fa-envelope fa-2x"></i></button>
+                    <div class="form-side-fixed" id="formSideFixed">
+                        <p id="loadingText"></p>
+                        <div id="resultText"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-section" class="section">
+            <h1>About Website</h1>
+            <p>Selamat datang di BestTrip.com! Kami hadir untuk membantu Anda menemukan perjalanan terbaik yang sesuai dengan preferensi dan mood Anda. Temukan destinasi liburan impian Anda dengan panduan kami yang dipersonalisasi dan rekomendasi yang akurat. Mulai petualangan Anda dengan BestTrip.com dan buat momen tak terlupakan di setiap perjalanan.</p>
+        </div>
+
+        <div id="feature-section" class="section flex">
+            <div class="feature-left">
+                <div class="keunggulan-left">
+                    <h4>keunggulan website ini?</h4>
+                    <h1>Best on website</h1>
+                </div>
+                <img src="assets/img/beach-7886067_1280.jpg" alt="" width="400px">
+            </div>
+            <div class="feature-right">
+                <div class="keunggulan-right">
+                    <h4>keunggulan website ini?</h4>
+                    <h1>Best on website</h1>
+                </div>
+                <div class="cards-feature">
+                    <div class="card flex">
+                        <img src="assets/icon/icon-brain.svg" alt="brain">
+                        <div class="content">
+                            <h4>Rekomendasi yang Dipersonalisasi</h4>
+                            <p>BestTrip menggunakan AI canggih untuk merekomendasikan destinasi liburan yang sesuai dengan preferensi Anda.</p>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <img src="assets/icon/icon-pallete.svg" alt="pallete">
+                        <div class="content">
+                            <h4>Antarmuka Intuitif</h4>
+                            <p>Desain user-friendly memudahkan navigasi, pengisian formulir, dan menemukan destinasi impian Anda.</p>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <img src="assets/icon/icon-book.svg" alt="book">
+                        <div class="content">
+                            <h4>Informasi Lengkap</h4>
+                            <p>BestTrip menyediakan informasi detail tentang destinasi, atraksi, aktivitas, akomodasi, dan tips perjalanan.</p>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <img src="assets/icon/icon-ai.svg" alt="ai">
+                        <div class="content">
+                            <h4>Tanya AI Interaktif</h4>
+                            <p>Dapatkan jawaban cepat dan relevan tentang destinasi dengan fitur Tanya AI, membantu Anda membuat keputusan perjalanan yang lebih baik.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+        <div id="contact-section" class="flex section">
+            <div class="contact-side">
+                <h1>Send Message</h1>
+                <p>message to Developer with NGL</p>
+                <textarea id="message" placeholder="Message"></textarea>
+                <div class="flex">
+                    <select id="select-contact-someone">
+                        <option value="">Pilih Pesan Tujuan</option>
+                        <option value="6289666192392">Ackmad Elfan Purnama</option>
+                        <option value="6281918087647">Aldi Aziz Faihkduracman</option>
+                        <option value="6282119487138">Muhammad Zidan Arkana</option>
+                    </select>
+                    <button onclick="seedMessage()" class="submit-message">Submit</button>
+                </div>
+            </div>
+            <div class="tim-side">
+                <h1>Tim</h1>
+                <div class="tim">
+                    <h4>Ackmad Elfan Purnama</h4>
+                    <h4>Aldi Aziz Faihkduracman</h4>
+                    <h4>Muhammad Zidan Arkana</h4>
+                </div>
+            </div>
+            <div class="school-side">
+                <h1>School</h1>
+                <h4>SMK Informatika Al-Irsyad Al-Islamiyyah Kota Cirebon</h4>
+            </div>
+        </div>
+        <div id="footer" class="flex">
+            <h6>&copy; 2025 BestTrip. All rights reserved.</h6>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.6/markdown-it.min.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    <script type="module" src="index.mjs"></script>
+</body>
+</html>

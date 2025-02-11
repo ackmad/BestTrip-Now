@@ -1,0 +1,691 @@
+/* Root */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montaga&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    transition: all ease .3s;
+    /* font-weight: 200; */
+    z-index: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1{
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+img{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.section{
+    padding: 5% 80px;
+}
+
+select{
+    appearance: none;
+    background-image: url('assets/icon/icon-arrow-light.svg');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 20px;
+}
+
+#form-control{
+    width: 150px;
+}
+
+
+
+
+/* Start - Hero Section */
+#hero-section{
+    background-image: url('assets/img/cave-5493598_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.14);
+    background-blend-mode: darken;
+
+    color: #fff;
+}
+
+    /* Start - Navbar */
+    #navbar{
+        justify-content: space-between;
+        padding: 10px 80px;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+    }
+
+    
+    .nav-menus{
+        backdrop-filter: blur(5px);
+        border-radius: 100px;
+        background-color: #ffffff18;
+        border: 0.5px solid #fff;
+    }
+    
+    .nav-menus li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0 5px;
+    }
+    
+    .nav-menus li a{
+        padding: 10px 15px;
+        color: #ffffff56;
+    }
+    
+    .nav-menus li a:hover{
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    .btn-start {
+        border-radius: 100px;
+        border: none;
+        background-color: #000; /* Button background color */
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+    }
+    
+    .btn-start a {
+        display: inline-block;
+        padding: 10px 40px; /* Adjusted padding for better appearance */
+        border-radius: 100px;
+        color: #fff; /* Changed text color to white for better contrast */
+        background-color: transparent; /* Set background color to transparent */
+        font-weight: 500;
+        text-decoration: none; /* Removed underline from the link */
+    }
+    
+    .btn-start:hover {
+        background-color: #fff; /* Button hover background color */
+    }
+    
+    .btn-start a:hover {
+        color: #000; /* Ensure text color changes to black on hover */
+    }
+        
+    #btn-submit{
+        display: block;
+        padding: 15px 20px;
+        color: #1E1E1E;
+        background-color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    .btn-start a{
+        padding: 5px 40px;
+        border-radius: 100px;
+        color: black;
+        background-color: #fff;
+        font-weight: 500;
+    }
+
+    .dropdown{
+        display: none;
+        position: absolute;
+        background-color: #1E1E1E;
+        width: 100%;
+        top: 70px;
+        border-radius: 20px;
+        transform: translateX(-2000);
+        transition: transform 0.5s ease;
+    
+        a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #fff;
+        }
+    }
+
+    .dropbtn{
+        padding: 10px 20px;
+        background-color: #1E1E1E;
+        color: #fff;
+        border-radius: 100px;
+        border: none;
+        display: none;
+    }
+    
+    .dropdown a:hover {
+        background-color: #2e2e2e;
+    }
+    
+
+    /* End - Navbar */
+
+.tagline{
+    font-family: "Montaga", serif;
+    font-weight: 100;
+    font-size: 90px;
+    width: 700px;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.descibe-tagline{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 55%;
+    margin-top: 10px;
+    mask-border: 10px;
+}
+
+.start{
+    border: none;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 10px 20px;
+    display: block;
+    
+    a{
+        padding: 10px 20px;
+        color: #1E1E1E;
+        font-weight: bold;
+    }
+}
+
+.form {
+    padding: 15px 10px;
+    backdrop-filter: blur(5px);
+    border: 0.5px solid #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    background: rgba(30, 30, 30, 0.8); /* Added background color for better visibility */
+}
+
+.form .flex {
+    display: flex; /* Ensure that children are displayed in a row */
+    margin-left: 20px;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.input-form img {
+    width: 24px; /* Adjust the size of the icons */
+    height: 24px;
+}
+
+.input-form input, .form-control {
+    margin-left: 10px;
+    padding: 0 15px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+
+.input-trasportasi #transportasi1 {
+    width: 120px; /* Adjust width for better appearance */
+}
+
+.form-left .input-mood #mood1 {
+    padding-right: 10px;
+}
+
+.input-weather #cuaca1 {
+    width: 120px; /* Adjust width for better appearance */
+}
+
+input::placeholder {
+    color: #ffffff;
+    opacity: 0.7; /* Make placeholder text a bit more transparent */
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-bottom: 1px solid #00bfff; /* Change focus border color for better visibility */
+}
+
+
+#toggleButton {
+    padding: 10px;
+    background-color: #1E1E1E;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 3;
+    border-radius: 10px 0 0 10px;
+    transition: background-color 0.3s ease;
+    background-color: #1E1E1E;
+}
+
+.body-side-fixed{
+    padding: 10px;
+}
+
+.form-side-fixed {
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    background-color: #1E1E1E;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 80%;
+    z-index: 2;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.291);
+    transition: transform 0.3s ease;
+    transform: translateX(100%); /* Hide the form initially */
+}
+
+.form-side-fixed p {
+    color: #fff;
+}
+
+
+/* End - Hero Section */
+
+/* Start - About Section */
+
+#about-section{
+    text-align: center;
+    padding: 5% 200px;
+}
+
+#about-section h1{
+    font-family: "Montaga", serif;
+    font-weight: 50;
+    margin-bottom: 10px;
+}
+
+#toggleButton{
+    display: none;
+}
+
+.form{
+    display: none;
+}
+
+
+
+
+/* End - About Section */
+
+/* Start - Feature Section */
+
+.feature-left{
+    margin-right: 50px;
+}
+
+.keunggulan-left{
+    display: none;
+}
+
+.feature-left img{
+    border-radius: 30px;
+}
+
+.feature-right{
+    margin-left: auto;
+    /* border: 1px solid black; */
+    width: 70%;
+}
+
+.feature-right h1{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.cards-feature .card{
+    padding: 20px 15px;
+    /* border: 1px solid black; */
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 80%;
+    cursor: default;
+}
+
+.cards-feature .card:hover{
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.135);
+    transform: scale(1.025);
+    z-index: 2;
+}
+
+.card img{
+    margin-right: 10px;
+}
+
+.content h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* End - Feature Section */
+
+/* Start - Contact Section */
+
+#contact-section{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+.contact-side h1{
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5px;
+}
+
+
+
+.contact-side textarea{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 400px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.contact-side textarea:focus{
+    outline: none;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+#select-contact-someone{
+    padding: 10px;
+    padding-right: 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.submit-message{
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+}
+
+.tim-side h1{
+    font-family: "Inter", sans-serif;
+}
+
+.tim{
+    margin-left: 20px;
+}
+
+.school-side h1{
+    font-family: "Inter", sans-serif;
+}
+
+.school-side h4{
+    margin-left: 20px;
+}
+
+/* End - Contact Section */
+
+/* Start - Footer Section */
+
+#footer{
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 20px 0;
+}
+
+h6{
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: "Inter", sans-serif;
+}
+.form-side-fixed{
+    display: none;
+}
+
+#formSideFixed.show {
+    transform: translateX(0%);
+}
+
+
+
+/* End - Footer Section */
+
+/* Tablet Respondsif */
+@media (max-width: 1485px) {
+    #navbar{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        position: fixed;
+    }
+
+    .nav-menus{
+        margin: 0 auto;
+    }
+
+    .descibe-tagline{
+        width: 70%;
+    }
+
+    .form{
+        display: block;
+        padding: 30px;
+        border-radius: 30px;
+
+        .flex{
+            margin: 10px 0;
+        }
+    }
+    .tagline{
+        font-size: 50px;
+        width: 400px;
+    }
+    .descibe-tagline{
+        font-size: 18px;
+        width: 500px;
+    }
+    .section{
+        padding: 10px 50px;
+    }
+    .form-side-fixed{
+        display: block;
+        width: 50%;
+        max-height: 500px; /* Tambahkan batas tinggi maksimum */
+        overflow-y: auto; /* Tambahkan scroll jika melebihi batas tinggi */
+        transition: opacity 0.5s ease; /* Animasi saat muncul dan menutup */
+        opacity: 1;
+
+        #hasilGenerate{
+            padding: 10px;
+        }
+    }
+    .hidden {
+        opacity: 0; /* Menyembunyikan elemen */
+        pointer-events: none; /* Mencegah interaksi saat tersembunyi */
+    }
+
+    .start{
+        display: block;
+    }
+
+    .start{
+        display: none;
+    }
+    #toggleButton{
+        display: block;
+    }
+
+    .form-side-fixed{
+        display: block;
+    }
+
+}
+
+@media (max-width: 900px) {
+    #feature-section{
+        display: block;
+    }
+    .keunggulan-left{
+        display: block;
+    }
+    .keunggulan-right{
+        display: none;
+    }
+    .btn-start{
+        display: none;
+    }
+    #about-section{
+        padding: 50px 50px;
+    }
+    .feature-right{
+        /* margin-left: auto; */
+        /* border: 1px solid black; */
+        width: 100%;
+    }    
+    #contact-section{
+        flex-flow: column;
+    }
+    .tim-side{
+        margin: 50px 0;
+    }
+    .submit-message{
+        width: 100px;
+        margin-left: 10px;
+    }
+    #toggleButton{
+        display: block;
+    }
+    .form-side-fixed{
+        display: none;
+    }
+
+    
+
+}
+
+@media (max-width: 700px) {
+    .nav-menus{
+        display: none;
+    }
+
+    #navbar{
+        backdrop-filter: blur(10px);
+        background-color: #ffffff18;
+        justify-content: space-between;
+    }
+
+    .start{
+        display: block;
+    }
+
+    #hero-section{
+        padding: 50px 0;
+    }
+    .form{
+        display: none;
+    }
+
+    .dropbtn{
+        display: block;
+    }
+    .form-side-fixed{
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .tagline{
+        font-size: 50px;
+        width: 90%;
+    }
+    .descibe-tagline{
+        font-size: 15px;
+        width: 100%;
+    }
+    #about-section p{
+        text-align: justify;
+        word-spacing: 2px;
+    }
+    #feature-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-feature .card{
+        padding: 20px 15px;
+        margin: 10px 0;
+        border-radius: 10px;
+        width: 100%;
+        cursor: default;
+    }
+    .card .content h4{
+        font-size: 15px;
+    }
+    .card .content p{
+        font-size: 12px;
+    }
+    .keunggulan-left{
+        margin: 40px 0;
+    }
+    .feature-left img{
+        width: 350px;
+        margin: 0 auto;
+    }
+    #message{
+        width: 100%;
+    }
+    #toggleButton{
+        display: none;
+    }
+    .form-side-fixed{
+        display: none;
+    }
+    
+}
